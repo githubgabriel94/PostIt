@@ -1,0 +1,53 @@
+<%- include("./partials/header.ejs") %>
+
+<section id="mainBody">
+  <hr class="border border-3 opacity-50 mt-0" />
+  <div class="container text-center my-5">
+    <div class="row align-items-center">
+      <div class="col"></div>
+      <div class="col">
+        <h3 class="display-6 text-light"><%= locals.title %></h3>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+  <section id="newPostForm" class="py-5">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <form action="/" method="post">
+          <div class="row justify-content-center mx-auto align-items-end">
+            <div class="col-sm-12 col-xs-12">
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label text-light"
+                  >What on earth is on your mind?</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="pContent"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <input class="form-control" type="date" name="pDate"/>
+            </div>
+            <div class="col-sm-8 col-xs-12">
+              <div class="d-grid gap-2">
+                <input
+                  type="submit"
+                  class="btn btn-outline-light"
+                  value="Post It"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+<%- include("./partials/footer.ejs") %>

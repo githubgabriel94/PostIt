@@ -1,0 +1,26 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="card text-center border-light bg-transparent text-light">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <p><%= cPost.date %></p>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= cPost.title %></h5>
+          <p class="card-text"><%= cPost.content %></p>
+          <form action="/post/<%= cPost.id %>" method="post">
+            <button class="btn btn-primary">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>

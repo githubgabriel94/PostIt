@@ -1,0 +1,53 @@
+.gradient-background-body {
+    background: linear-gradient(300deg, #DFD0B8, #4D869C, #153448);
+    background-size: 100% 500%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cForm {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-area{
+    background-image: url('/images/sky-2479213_1920.jpg');
+}
+
+.middle{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    margin-right: 0px;
+    width: none;
+}
